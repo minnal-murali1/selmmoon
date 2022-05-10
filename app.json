@@ -1,0 +1,73 @@
+{
+   "name":"selmun",
+   "description":"A Telegram Bot that leeches magnet/torrent links/files from the interent. YT-DL supported for downloading youtube videos. Supports uploading to different cloud providers. ",
+   "keywords":[
+      "telegram",
+      "bot",
+      "torrent",
+      "leech"
+   ],
+   "repository":"https://github.com/dr-qaatil/selmun",
+   "success_url":"https://github.com/dr-qaatil/selmun",
+   "website":"https://github.com/dr-qaatil/selmun",
+   "stack":"container",
+   "env":{
+      "BOT_TOKEN":{
+         "description":"Your bot token, as a string.",
+         "value":""
+      },
+      "GDRIVE_FOLDER_ID":{
+         "description":"Your gdrive folder to upload data",
+         "value":"",
+         "required":false
+      },
+      "OWNER_ID":{
+         "description":"Owner's ID from @userinfobot",
+         "value":"",
+         "required":true
+      },
+      "DOWNLOAD_DIR":{
+         "description":"path to downloaded file on vps",
+         "value":"/usr/src/app/downloads",
+         "required":true
+      },
+"DOWNLOAD_STATUS_UPDATE_INTERVAL":{
+         "description":"update time",
+         "value":"10",
+         "required":true
+      },
+"AUTO_DELETE_MESSAGE_DURATION":{
+         "description":"delete duration",
+         "value":"20",
+         "required":true
+      },
+"BASE_URL_OF_BOT":{
+         "description":"bot url",
+         "value":"https://botname.herokuapp.com",
+         "required":true
+      },
+
+      "IS_TEAM_DRIVE":{
+         "description":"is team drive?",
+         "value":"True",
+         "required":true
+      },
+      "TELEGRAM_API":{
+         "description":"Get this value from https://my.telegram.org",
+         "value":""
+      },
+      "TELEGRAM_HASH":{
+         "description":"Get this value from https://my.telegram.org",
+         "value":""
+      }
+   },
+
+"addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "14"
+}
+}
+]
+}
