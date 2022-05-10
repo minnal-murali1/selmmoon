@@ -28,7 +28,7 @@
       },
       "DOWNLOAD_DIR":{
          "description":"path to downloaded file on vps",
-         "value":"/usr/src/app/downloads",
+         "value":"/usr/selmun/app/downloads",
          "required":true
       },
 "DOWNLOAD_STATUS_UPDATE_INTERVAL":{
